@@ -1,0 +1,12 @@
+C:\Users\Sushmit.Saxena\source\repos\IntranetWebApi\IntranetPortal.Common\bin\Debug\net8.0\IntranetPortal.Common.deps.json
+C:\Users\Sushmit.Saxena\source\repos\IntranetWebApi\IntranetPortal.Common\bin\Debug\net8.0\IntranetPortal.Common.dll
+C:\Users\Sushmit.Saxena\source\repos\IntranetWebApi\IntranetPortal.Common\bin\Debug\net8.0\IntranetPortal.Common.pdb
+C:\Users\Sushmit.Saxena\source\repos\IntranetWebApi\IntranetPortal.Common\obj\Debug\net8.0\IntranetPortal.Common.csproj.AssemblyReference.cache
+C:\Users\Sushmit.Saxena\source\repos\IntranetWebApi\IntranetPortal.Common\obj\Debug\net8.0\IntranetPortal.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sushmit.Saxena\source\repos\IntranetWebApi\IntranetPortal.Common\obj\Debug\net8.0\IntranetPortal.Common.AssemblyInfoInputs.cache
+C:\Users\Sushmit.Saxena\source\repos\IntranetWebApi\IntranetPortal.Common\obj\Debug\net8.0\IntranetPortal.Common.AssemblyInfo.cs
+C:\Users\Sushmit.Saxena\source\repos\IntranetWebApi\IntranetPortal.Common\obj\Debug\net8.0\IntranetPortal.Common.csproj.CoreCompileInputs.cache
+C:\Users\Sushmit.Saxena\source\repos\IntranetWebApi\IntranetPortal.Common\obj\Debug\net8.0\IntranetPortal.Common.dll
+C:\Users\Sushmit.Saxena\source\repos\IntranetWebApi\IntranetPortal.Common\obj\Debug\net8.0\refint\IntranetPortal.Common.dll
+C:\Users\Sushmit.Saxena\source\repos\IntranetWebApi\IntranetPortal.Common\obj\Debug\net8.0\IntranetPortal.Common.pdb
+C:\Users\Sushmit.Saxena\source\repos\IntranetWebApi\IntranetPortal.Common\obj\Debug\net8.0\ref\IntranetPortal.Common.dll

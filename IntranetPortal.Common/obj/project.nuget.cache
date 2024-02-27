@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fCNsNOXY/VuzG50t24sIhyRU+bpsXK8MasWVJ6mkMOcY2bZa5f4favMkVoWN7VXTLJrKTF3ZOxFtd6uHQr1BOA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sushmit.Saxena\\source\\repos\\IntranetWebApi\\IntranetPortal.Common\\IntranetPortal.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sushmit.Saxena\\.nuget\\packages\\jetbrains.annotations\\2023.3.0\\jetbrains.annotations.2023.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

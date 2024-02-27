@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "IntranetPortal.IRepository/1.0.0": {
+        "runtime": {
+          "IntranetPortal.IRepository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IntranetPortal.IRepository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
