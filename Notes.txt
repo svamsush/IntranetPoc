@@ -1,0 +1,50 @@
+﻿//private static void InitializeConstants()
+        //{
+        //    builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
+        //}
+
+        //private static void AddQuartz()
+        //{
+        //    var quartzSettings = builder.Configuration.GetSection("QuartzSettings");
+        //    var activate = Convert.ToBoolean(quartzSettings["Enabled"]);
+        //    var cronSchedule = Convert.ToString(quartzSettings["CronSchedule"]);
+        //    if (activate && cronSchedule != null && !string.IsNullOrEmpty(cronSchedule))
+        //    {
+        //        services.AddQuartz(q =>
+        //        {
+        //            var jobKey = new JobKey("FileDeletionJob");
+        //            q.UseMicrosoftDependencyInjectionJobFactory();
+        //            q.AddJob<FileDeletionJob>(opt => opt.WithIdentity(jobKey));
+
+        //            q.AddTrigger(opt => opt
+        //            .ForJob(jobKey)
+        //            .WithIdentity("FileDeletionJob-trigger")
+        //            .WithCronSchedule(cronSchedule)
+        //            ); 
+        //        });
+
+        //        services.AddQuartzServer(options => { options.WaitForJobsToComplete = true; });
+        //        services.AddQuartzHostedService(options => { options.WaitForJobsToComplete = true; });
+        //    }
+        //}
+
+        private static void UpdateMaxRequestSize()
+        {
+            var requestConfig = builder?.Configuration.GetSection("RequestSizeConfig");
+            services?.Configure<IISServerOptions>(options =>
+            {
+                options.MaxRequestBodySize = Convert.ToInt64(requestConfig!["MaxRequestBodySize"]);
+            });
+            services!.Configure<KestrelServerOptions>(options =>
+            {
+                options.Limits.MaxRequestBodySize = Convert.ToInt64(requestConfig!["MaxRequestBodySize"]);
+            });
+            services.Configure<FormOptions>(options =>
+            {
+                options.ValueLengthLimit = Convert.ToInt32(requestConfig["ValueLengthLimit"]);
+                options.MultipartBodyLengthLimit = Convert.ToInt64(requestConfig["MultipartBodyLengthLimit"]);
+                options.MultipartHeadersLengthLimit = Convert.ToInt32(requestConfig["MultipartHeadersLengthLimit"]);
+                options.MultipartBoundaryLengthLimit = Convert.ToInt32(requestConfig["MultipartBoundaryLengthLimit"]);
+                options.MultipartHeadersCountLimit = Convert.ToInt32(requestConfig["MultipartHeadersCountLimit"]);
+            });
+        }
